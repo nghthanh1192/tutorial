@@ -29,3 +29,5 @@ Route::get('usercontroller/path', [
     'middleware' => 'First',
     'uses' => 'UserController@showPath',
 ]);
+
+Route::resource('my', 'MyController');

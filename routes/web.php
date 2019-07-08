@@ -32,4 +32,9 @@ Route::get('usercontroller/path', [
 
 Route::resource('my', 'MyController');
 
-Route::controller('test', 'ImplicitController');
+// Route::controller('test', 'ImplicitController');
+
+class MyClass {
+    public $foo = 'bar';
+}
+Route::get('/myclass', 'ImplicitController@index');

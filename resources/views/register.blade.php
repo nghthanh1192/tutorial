@@ -4,7 +4,8 @@
    </head>
 
    <body>
-      <form action = "/user/register" method = "post">
+      <!-- <form action = "/user/register" method = "post"> -->
+      <form action = "/cookie/set" method = "post">
          <input type = "hidden" name = "_token" value = "<?php echo csrf_token() ?>">
       
          <table>

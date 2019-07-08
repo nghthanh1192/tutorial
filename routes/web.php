@@ -43,3 +43,9 @@ Route::get('register', function() {
     return view('register');
 });
 Route::post('user/register', 'UserRegistration@postRegister');
+
+// Route::get('/cookie/set', 'CookieController@setCookie');
+// Route::get('/cookie/get', 'CookieController@getCookie');
+
+Route::post('/cookie/set', 'UserRegistration@setCookie');
+Route::get('/cookie/get', 'UserRegistration@getCookie');
